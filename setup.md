@@ -35,7 +35,7 @@ dependencies {
 **Once you're strong enough, let's either scrape the world or make your markup a safer place!**
 
 {% hint style="info" %}
- Super-powers are granted randomly so please submit an ****[**issue**](https://github.com/skrapeit/skrape.it/issues) if you're not happy with yours or feels like you're missing some.
+ Super-powers are granted randomly so please submit an ****[**issue**](https://github.com/skrapeit/skrape.it/issues) if you're not happy with yours or feels like you're missing some. [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/skrapeit/skrape.it/issues)
 {% endhint %}
 
 
