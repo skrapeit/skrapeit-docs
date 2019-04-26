@@ -1,3 +1,7 @@
+---
+description: "\uD83E\uDD1D Contributions welcome"
+---
+
 # Planed Features / Progress
 
 ✅ = done  
