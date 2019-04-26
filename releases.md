@@ -5,14 +5,12 @@ description: >-
 ---
 
 # Releases
-> latest version:   [![maven central](https://img.shields.io/maven-central/v/it.skrape/skrapeit-core.svg?color=0)](https://search.maven.org/search?q=g:it.skrape%20AND%20a:skrapeit-core&skrapeit-core=gav)
+
+> latest version: [![maven central](https://img.shields.io/maven-central/v/it.skrape/skrapeit-core.svg?color=0)](https://search.maven.org/search?q=g:it.skrape%20AND%20a:skrapeit-core&skrapeit-core=gav)
 >
-> test-coverage:    [![Codecov](https://img.shields.io/codecov/c/github/skrapeit/skrape.it.svg)](https://codecov.io/gh/skrapeit/skrape.it)
+> test-coverage: [![Codecov](https://img.shields.io/codecov/c/github/skrapeit/skrape.it.svg)](https://codecov.io/gh/skrapeit/skrape.it)
 >
 > dependency check: [![Known Vulnerabilities](https://snyk.io/test/github/skrapeit/skrape.it/badge.svg?targetFile=pom.xml)](https://snyk.io/test/github/skrapeit/skrape.it?targetFile=pom.xml)
-
-
-
 
 ## 0.4.3 - 20.04.19
 
