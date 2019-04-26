@@ -81,6 +81,7 @@ description: >-
 ### Added
 
 * Initial release to maven-central including:
+
   * configurable Fetch-mechanism \(http-request\) that provides meaningful defaults
   * add parsing functionality
   * add DSL for convenient scraping with request-options
