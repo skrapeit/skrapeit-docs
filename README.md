@@ -2,8 +2,7 @@
 description: A Story of Deserializing HTML / XML.
 ---
 
-# Introduction [![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)](https://github.com/KotlinBy/awesome-kotlin)
-
+# Introduction
 {% hint style="info" %}
 \*\*\*\*[**skrape{it}**](http://www.skrape.it) is a Kotlin-based HTML / XML testing and web scraping library that can be used seamlessly in Spring-Boot, Android or other JVM projects. It places particular emphasis on ease of use, a high level of readability, attention to performance through the use of non-blocking operations and is not bound to a specific test runner.
 {% endhint %}
