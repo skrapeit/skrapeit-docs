@@ -12,15 +12,10 @@
 * [Releases](releases.md)
 * [Planed Features / Progress](planed-features.md)
 
-## MockMvc Extension
+## Extensions
 
-* [Setup](mockmvc-extension/setup.md)
-* [How to Use](mockmvc-extension/how-to-use.md)
-* [Releases](mockmvc-extension/releases.md)
-
-## Ktor Extension
-
-* [Setup](ktor-extension/setup.md)
-* [How to Use](ktor-extension/how-to-use.md)
-* [Releases](ktor-extension/releases.md)
+* [MockMvc](extensions/mockmvc/README.md)
+  * [Releases](extensions/mockmvc/releases.md)
+* [Ktor](extensions/ktor/README.md)
+  * [Releases](extensions/ktor/releases.md)
 

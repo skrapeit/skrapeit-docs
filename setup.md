@@ -36,8 +36,8 @@ Once you're strong enough, let's either scrape the world or make your markup a s
 
 **Skrape{it} provides several bindings for some well-known testing-frameworks and HTTP-clients:**
 
-* \*\*\*\*[**Spring MockMvc extension**](mockmvc-extension/how-to-use.md)\*\*\*\*
-* \*\*\*\*[**Ktor extension**](ktor-extension/how-to-use.md)\*\*\*\*
+* \*\*\*\*[**Spring MockMvc extension**]()\*\*\*\*
+* \*\*\*\*[**Ktor extension**]()\*\*\*\*
 
 {% hint style="info" %}
 Super-powers are granted randomly so please submit an [**issue**](https://github.com/skrapeit/skrape.it/issues) if you're not happy with yours or feels like you're missing some.   
