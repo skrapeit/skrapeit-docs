@@ -10,7 +10,7 @@ description: A Story of Deserializing HTML / XML.
 
 ## A Story of Deserializing HTML
 
-Have you ever heard about the [**kotlinx.html**](https://github.com/Kotlin/kotlinx.html) DSL?  
+Have you ever heard of the [**kotlinx.html**](https://github.com/Kotlin/kotlinx.html) DSL?  
 In case you don't, it is a Kotlin multiplatform library that provides a type-safe DSL to build / serialize static HTML right from your Kotlin code.
 
 But what if we want to do it the other way around and deserialize HTML or XML in Kotlin?

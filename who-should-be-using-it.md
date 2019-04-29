@@ -4,7 +4,19 @@ description: Deserialize HTML? Why should that be useful?
 
 # Who should be using it
 
-**The following scenarios may answer these questions best:**
+💡**Skrape{it}** focuses first and foremost on parsing html, but it's possible to parse any XML related markup specification, like:
+
+* SVG [\(Scalable Vector Graphics\)](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics)
+* RSS [\(Rich Site Summary\)](https://en.wikipedia.org/wiki/RSS)
+* GraphML [\(Graphical Markup Language\)](https://en.wikipedia.org/wiki/GraphML)
+* UML [\(Unified Modeling Language\)](https://en.wikipedia.org/wiki/Unified_Modeling_Language)
+* OSM [\(OpenStreetMap\)](https://en.wikipedia.org/wiki/OpenStreetMap)
+* GPX [\(GPS Exchange Format\)](https://en.wikipedia.org/wiki/GPS_Exchange_Format)
+* XMPP [\(Extensible Messaging and Presence Protocol\)](https://en.wikipedia.org/wiki/XMPP)
+* MathML [\(Mathematical Markup Language\)](https://en.wikipedia.org/wiki/MathML)
+* ...
+
+**some thoughts when it is helpful to use skrape{it}:**
 
 {% hint style="success" %}
 "I would like to test the endpoints of my application that produces HTML/XML in a meaningful and idiomatic way!"
