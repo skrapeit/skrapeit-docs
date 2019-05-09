@@ -64,6 +64,14 @@ description: allows you to set several options to define your request.
         <td style="text-align:left">no additional custom headers will be sent by default</td>
     </tr>
     <tr>
+      <td style="text-align:left"><b>cookies</b>
+      </td>
+      <td style="text-align:left">Will add Cookies to your request</td>
+      <td style="text-align:center"><b>Map&lt;String, String&gt;</b>
+      </td>
+      <td style="text-align:left">will send no Cookies by default</td>
+    </tr>
+    <tr>
       <td style="text-align:left"><b>timeout</b>
       </td>
       <td style="text-align:left">Sets the total request timeout duration. A timeout of zero (<code>0</code>)
@@ -133,11 +141,11 @@ description: allows you to set several options to define your request.
       <td style="text-align:left"><b>mode</b>
       </td>
       <td style="text-align:left">
-        <p>switch between standard mode (HTTP) and browser mode.
-          <br />For server-side rendered Websites, XML-responses or local HTML / XML files
-          you should always use the default mode because it&apos;s much more performant.</p>
+        <p>For server-side rendered Websites, XML-responses or local HTML / XML files
+          you should always use the default mode because it&apos;s much more performant
+          (good old HTTP request).</p>
         <p>If you need to scrape client side rendered Websites (e.g. build with React.js,
-          Vue.js or Angular) try the Browser mode (requires JavaFx packages).</p>
+          Vue.js, Angular or jQuery) try the DOM mode.</p>
       </td>
       <td style="text-align:center"><b>Mode</b>
       </td>

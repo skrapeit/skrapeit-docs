@@ -35,7 +35,11 @@ This will return the following JSON as response body when `/user-data` is gettin
 {
   "userName": "skrapeit",
   "repositoryNames": [
-    "skrape.it"
+    "skrape.it",
+    "skrapeit-docs",
+    "skrapeit-ktor-extension",
+    "skrapeit-mockmvc-extension",
+    "skrapeit-parent"
   ]
 }
 ```

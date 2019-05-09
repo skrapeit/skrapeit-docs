@@ -4,7 +4,7 @@ description: >-
   documentation you where looking for.
 ---
 
-# Extracting data from Websites
+# Scraping
 
 💡 **Let's assume a pretty basic scenario. We want to make a request to a github profile page and extract the nickname of the profiles owner as well as getting the names of them pinned repositories.** 
 

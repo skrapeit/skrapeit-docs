@@ -12,11 +12,34 @@ description: >-
 >
 > dependency check: [![Known Vulnerabilities](https://snyk.io/test/github/skrapeit/skrape.it/badge.svg?targetFile=pom.xml)](https://snyk.io/test/github/skrapeit/skrape.it?targetFile=pom.xml)
 
-## 0.4.3 - 20.04.19
 
-### Refactoring
 
-* simplified build setup for further development
+## 0.6.0 - 09.05.19
+
+### Added
+
+* support to render JS and get parsed DOM tree
+* request option to add cookies to the request in a more convenient fashion
+
+## 0.5.1 - 25.04.19
+
+### Bugfix
+
+* fix trust store issue for https connections
+
+## 0.5.0 - 09.05.19
+
+### Added
+
+* support to render JS and get parsed DOM tree
+* request option to add cookies to the request in a more convenient fashion
+
+## 0.4.3 - 18.04.19
+
+### Patch
+
+* can parse a string representation of HTML via DSL
+* add `toBeNotPresent` matcher
 
 ## 0.4.2 - 17.04.19
 
