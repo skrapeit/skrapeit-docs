@@ -1,3 +1,7 @@
+---
+description: This example assumes a working Spring-Boot setup.
+---
+
 # Creating a RESTful API \(Spring-Boot\)
 
 This is a basic example on how you could build a REST API directly return data from a scraped website as JSON:
@@ -19,8 +23,8 @@ class MyController {
             url = "https://github.com/skrapeit"
             extract {
                 MyScrapedData(
-                    userName = el(".h-card .p-nickname").text(),
-                    repositoryNames = `$`("span.repo").map { it.text() }
+                    userName = element(".h-card .p-nickname").text(),
+                    repositoryNames = elements("span.repo").map { it.text() }
                 )
             }
         }
