@@ -7,7 +7,7 @@
   * [Request Options](dsl/how-to-make-a-http-request.md)
   * [Testing](dsl/basic-test-scenario.md)
   * [Scraping](dsl/extracting-data-from-websites/README.md)
-    * [Extract client-side rendered data](dsl/extracting-data-from-websites/extract-client-side-rendered-data.md)
+    * [JS-rendered sites](dsl/extracting-data-from-websites/extract-client-side-rendered-data.md)
     * [Creating a RESTful API \(Spring-Boot\)](dsl/extracting-data-from-websites/most-simple-spring-boot-example.md)
 * [Releases](releases.md)
 * [Planed Features / Progress](planed-features.md)

@@ -4,25 +4,23 @@ description: >-
   elements.
 ---
 
-# Extract client-side rendered data
+# JS-rendered sites
 
 Most modern webpages are dynamically adding elements or data to the DOM by the use of Javascript. Some even are single-page-applications \(SPA\) build with React.js, Vue.js, Angular, etc - that in turn means nearly the whole DOM is rendered by Javascript that has to be interpreted by a Javascript engine \(usually your Browser\).
 
 **Skrape{it}**'s  default mode is making simple HTTP requests - and thereby it's not possible to scrape JS driven websites in default mode.
 
 {% hint style="info" %}
-**Request option `mode = Mode.Browser` for the win!**
+**Request option `mode = Mode.DOM` for the win!**
 
 When using **skrape{it}**'s browser mode it emulates to be a real browser, executes the pages Javascript and returns a parsed representation of a website. It supports parsing of client side rendered markup \(thereby it's possible to scrape or parse websites that uses React.js, Vue.js, Angular, jQuery and so on\).
 
-Because of the browser emulation it is not as fast as the default mode!
+💡 _**Because of the browser emulation it is not as fast as the default mode!**_
 {% endhint %}
 
-{% hint style="danger" %}
-The Browser-Mode option is in **experimental state** at the moment. Drawbacks are that it requires a JDK including **javaFx** \(e.g. ****[**oracleJdk**](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) or[ **ZuluFx**](https://www.azul.com/downloads/zulu/zulufx/)\) and is **not working for https** connections so far.
-{% endhint %}
+## Example
 
-💡 **Let's assume a pretty basic scenario. We want to make a request to a website that is rendering data via Javascript. For instance it's markup could look like this - that is adding an extra div element including some text.** 
+**Let's assume a pretty basic scenario. We want to make a request to a website that is rendering data via Javascript. For instance it's markup could look like this - that is adding an extra div element including some text.** 
 
 {% code-tabs %}
 {% code-tabs-item title="Example Markup that renders elements via Javascipt" %}
@@ -57,7 +55,7 @@ The Browser-Mode option is in **experimental state** at the moment. Drawbacks ar
 fun main() {
     val scrapedData = skrape {
         url = "http://some.url"
-        mode = Mode.BROWSER
+        mode = Mode.DOM
         extract { 
             element("div.dynamic").text()
         }
