@@ -8,8 +8,8 @@ This is a basic example on how you could build a REST API directly return data f
 
 ```kotlin
 import it.skrape.extract
-import it.skrape.selects.`$`
-import it.skrape.selects.el
+import it.skrape.selects.elements
+import it.skrape.selects.element
 import it.skrape.skrape
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
