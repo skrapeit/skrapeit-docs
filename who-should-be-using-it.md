@@ -4,7 +4,9 @@ description: Deserialize HTML? Why should that be useful?
 
 # Who should be using it
 
-💡**Skrape{it}** focuses first and foremost on parsing html, but it's possible to parse any XML related markup specification, like:
+
+
+**Skrape{it}** focuses first and foremost on parsing html, but it's possible to parse any XML related markup specification, like:
 
 * SVG [\(Scalable Vector Graphics\)](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics)
 * RSS [\(Rich Site Summary\)](https://en.wikipedia.org/wiki/RSS)

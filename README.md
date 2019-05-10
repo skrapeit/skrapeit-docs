@@ -5,7 +5,7 @@ description: A Story of Deserializing HTML / XML.
 # Introduction
 
 {% hint style="info" %}
-[**skrape{it}**](http://www.skrape.it) is a Kotlin-based HTML / XML testing and web scraping parser-library that can be used seamlessly in Spring-Boot, Android or other JVM projects. It places particular emphasis on ease of use, a high level of readability, attention to performance through the use of non-blocking operations and is not bound to a specific test runner.
+[**skrape{it}**](http://www.skrape.it) is a DSL-driven HTML/XML parser-library that enables meaningful testing of Dom trees. It places particular emphasis on ease of use, a high level of readability, attention to performance through the use of non-blocking operations.
 {% endhint %}
 
 ## A Story of Deserializing HTML
