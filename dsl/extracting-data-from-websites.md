@@ -47,7 +47,7 @@ fun main() {
 {% endcode-tabs %}
 
 {% hint style="info" %}
-1⃣ We are in the scope of skrape{} here. This is the place to configure your request. The code example we are only defining the url we want to make a request against but there are a lot [**more options to configure the request**](../how-to-make-a-http-request.md).
+1⃣ We are in the scope of skrape{} here. This is the place to configure your request. The code example we are only defining the url we want to make a request against but there are a lot [**more options to configure the request**](how-to-make-a-http-request.md).
 
 2⃣ To select the first occurrence of an element within the html tree you can use the `el()` function in the scope of `extract{}`. It is expecting an CSS selector String and will return an object of type`Element`.  
 There's a lot you can do with an `Element`, in this example we just want to get its text. You can find a full list of the methods `Element` offers over [**here**](https://jsoup.org/apidocs/org/jsoup/nodes/Element.html).

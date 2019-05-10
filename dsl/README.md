@@ -6,13 +6,13 @@
 
 ### The Skrape{it} DSL$$_1$$ is the recommended way of using the library. It offers the highest level of features and usability.
 
-The DSL should be nearly self-explaining. Depending on your use-case here is an example with explanations on how to use skrape{it} to write integration tests that validates an endpoint or an URL that is returning HTML:
+The DSL should be nearly self-explaining. Depending on your use-case here is an example with explanations on how to use skrape{it} to write automated tests that validates an endpoint or an URL that is returning HTML:
 
 {% page-ref page="basic-test-scenario.md" %}
 
 Further information on what is the best way to actually scrape the content of an webpage and work with that data can be found here:
 
-{% page-ref page="extracting-data-from-websites/" %}
+{% page-ref page="extracting-data-from-websites.md" %}
 
 #### 
 
