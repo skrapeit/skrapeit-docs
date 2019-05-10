@@ -8,14 +8,18 @@
   * [Testing](dsl/basic-test-scenario.md)
   * [Scraping](dsl/extracting-data-from-websites.md)
   * [JS-rendered sites](dsl/extract-client-side-rendered-data.md)
-  * [Creating a RESTful API \(Spring-Boot\)](dsl/most-simple-spring-boot-example.md)
 * [Releases](releases.md)
+* [Examples](examples/README.md)
+  * [Creating a RESTful API \(Spring-Boot\)](examples/most-simple-spring-boot-example.md)
 * [Planed Features / Progress](planed-features.md)
+* [GitHub Repo](https://github.com/skrapeit/skrape.it)
 
 ## Extensions
 
 * [MockMvc](extensions/mockmvc/README.md)
   * [Releases](extensions/mockmvc/releases.md)
+  * [GitHub Repo](https://github.com/skrapeit/skrapeit-mockmvc-extension)
 * [Ktor](extensions/ktor/README.md)
   * [Releases](extensions/ktor/releases.md)
+  * [GitHub Repo](https://github.com/skrapeit/skrapeit-ktor-extension)
 
