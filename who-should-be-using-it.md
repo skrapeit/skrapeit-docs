@@ -44,5 +44,3 @@ description: Deserialize HTML? Why should that be useful?
 "I want to grab some data from a website that's not providing an API!"
 {% endhint %}
 
-These are just a few reasons that came to our mind  from time to time and if you think one these quotes have came to your mind as well you should definitely give **skrape{it}** a try. 
-

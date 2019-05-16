@@ -141,15 +141,14 @@ description: allows you to set several options to define your request.
       <td style="text-align:left"><b>mode</b>
       </td>
       <td style="text-align:left">
-        <p>For server-side rendered Websites, XML-responses or local HTML / XML files
-          you should always use the default mode because it&apos;s much more performant
-          (good old HTTP request).</p>
-        <p>If you need to scrape client side rendered Websites (e.g. build with React.js,
+        <p>For server-side rendered Websites, XML-responses you should always use
+          the default mode because it&apos;s more performant (good old HTTP request).</p>
+        <p>If you need to parse client side rendered Websites (e.g. build with React.js,
           Vue.js, Angular or jQuery) try the DOM mode.</p>
       </td>
       <td style="text-align:center"><b>Mode</b>
       </td>
-      <td style="text-align:left">HTTP</td>
+      <td style="text-align:left">SOURCE</td>
     </tr>
   </tbody>
 </table>
