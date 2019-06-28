@@ -17,7 +17,7 @@ But what if we want to do it the other way around and deserialize HTML or XML in
 
 💪 Let's rescue the world \(at least in terms of html scraping 🤓\) and do it the Kotlin way.
 
-The idea to have a Kotlin-based library to scrape or parse HTML / XML was getting clearer after seeing the awesome talk about [_**Creating Internal DSLs in Kotlin**_](https://kotlinconf.com/talks/#date=5-october&session=41599) \_**\*\*\_by Venkat Subramaniam at the KotlinConf 2018 in Amsterdam. Totally amazed by the readability and the possibilities a DSL written in Kotlin provides, the idea of** Skrape{it}\*\* was born!
+The idea to have a Kotlin-based library to scrape or parse HTML / XML was getting clearer after seeing the awesome talk about [_**Creating Internal DSLs in Kotlin**_](https://kotlinconf.com/talks/#date=5-october&session=41599) by Venkat Subramaniam at the KotlinConf 2018 in Amsterdam. Totally amazed by the readability and the possibilities a DSL written in Kotlin provides, the idea of Skrape{it} was born!
 
 The major paradigms of the library are that it's flexible, highly readable, not bound to specific test-runner and reactive / non blocking
 

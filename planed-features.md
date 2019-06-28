@@ -1,5 +1,5 @@
 ---
-description: "\uD83E\uDD1D Contributions welcome"
+description: "\U0001F91D Contributions welcome"
 ---
 
 # Planed Features / Progress
