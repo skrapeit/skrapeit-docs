@@ -21,6 +21,10 @@ description: Deserialize HTML? Why should that be useful?
 **some thoughts when it is helpful to use skrape{it}:**
 
 {% hint style="success" %}
+"I want to grab some data from a website that's not providing an API!"
+{% endhint %}
+
+{% hint style="success" %}
 "I would like to test the endpoints of my application that produces HTML/XML in a meaningful and idiomatic way!"
 {% endhint %}
 
@@ -38,9 +42,5 @@ description: Deserialize HTML? Why should that be useful?
 
 {% hint style="success" %}
 "I'm an Android developer and want to write proper tests for my Manifest file, XML Layout files and other XML related stuff within my project!"
-{% endhint %}
-
-{% hint style="success" %}
-"I want to grab some data from a website that's not providing an API!"
 {% endhint %}
 
