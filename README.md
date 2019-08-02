@@ -32,7 +32,7 @@ Furthermore, Skrape{it} offers the possibility to verify expectations by offerin
 
 #### Sponsorship
 
-Skrape{it} is and always will be free and open-source. However your sponsorship of this project is greatly appreciated and will fund the caffeine and pizzas that fuel its development.
+**Skrape{it}** **is** and **always** will be **free and open-source**. However your sponsorship of this project is greatly appreciated and will fund the caffeine and pizzas that fuel its development.
 
 To sponsor Skrape{it}, just click this button → [![Donate](https://img.shields.io/badge/-donate-blue.svg?logo=paypal)](https://www.paypal.me/skrapeit)
 
