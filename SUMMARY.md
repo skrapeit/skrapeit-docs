@@ -11,7 +11,6 @@
 * [Releases](releases.md)
 * [Examples](examples/README.md)
   * [Creating a RESTful API \(Spring-Boot\)](examples/most-simple-spring-boot-example.md)
-* [Planed Features / Progress](planed-features.md)
 * [GitHub Repo](https://github.com/skrapeit/skrape.it)
 
 ## Extensions

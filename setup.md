@@ -12,7 +12,7 @@
 <dependency>
   <groupId>it.skrape</groupId>
   <artifactId>skrapeit-core</artifactId>
-  <version>0.5.1</version>
+  <version>0.6.0</version>
 </dependency>
 ```
 {% endcode-tabs-item %}
@@ -24,7 +24,7 @@
 {% code-tabs-item title="build.gradle.kts" %}
 ```kotlin
 dependencies {
-    compile("it.skrape:skrapeit-core:0.5.1")
+    compile("it.skrape:skrapeit-core:0.6.0")
 }
 ```
 {% endcode-tabs-item %}
