@@ -4,6 +4,67 @@
 >
 > Martin Fowler
 
+```kotlin
+class CompleteSkrapeItExample {
+    
+    @Test
+    internal fun `dsl can skrape by url`() {
+    skrape {
+        url = "http://localhost:8080/example"
+        
+        mode = DOM // optional -> defaults to SOURCE (plain http request) - DOM will also render JS
+        method = GET // optional -> defaults to GET
+        timeout = 5000 // optional -> defaults to 5000ms
+        followRedirects = true // optional -> defaults to true
+        userAgent = "some custom user agent" // optional -> defaults to "Mozilla/5.0 skrape.it"
+        cookies = mapOf("some-cookie-name" to "some-value") // optional
+        headers = mapOf("some-custom-header" to "some-value") // optional
+        
+        extract {
+            htmlDocument {
+                // all offical html and html5 elements are supported by the DSL
+                div {
+                    withClass = "foo" and "bar" and "fizz" and "buzz"
+                    withAttribute = "some-key" to "some-value"
+                    // will create css-query div.foo.bar.fizz.buzz[some-key='some-value']
+                    
+                    findFirst { // will find the first matching occurence 
+                        text toBe "div with class foo"
+                    }
+
+                    findAll { // will find the all matching occurences
+                        toBePresentExactlyOnce()
+                    }
+                }
+                // can handle custom tags as well
+                "a-custom-tag" {
+                    findFirst {
+                        text toBe "i'm a custom html5 tag"
+                    }
+                }
+                // can handle custom tags written in css selctor query syntax
+                "div.foo.bar.fizz.buzz" {
+                    findFirst {
+                        text toBe "div with class foo"
+                    }
+                }
+
+                // can handle custom tags and add selector specificas via DSL
+                "div.foo" {
+
+                    withClass = "bar" and "fizz" and "buzz"
+
+                    findFirst {
+                        text toBe "div with class foo"
+                    }
+                }
+            }
+        }
+    }
+}
+}
+```
+
 ### The Skrape{it} DSL$$_1$$ is the recommended way of using the library. It offers the highest level of features and usability.
 
 The DSL should be nearly self-explaining. Depending on your use-case here is an example with explanations on how to use skrape{it} to write automated tests that validates an endpoint or an URL that is returning HTML:
