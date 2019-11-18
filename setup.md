@@ -11,7 +11,7 @@
 <dependency>
   <groupId>it.skrape</groupId>
   <artifactId>skrapeit-core</artifactId>
-  <version>0.6.0</version>
+  <version>1.0.0-alpha1</version>
 </dependency>
 ```
 {% endcode %}
@@ -21,7 +21,7 @@
 {% code title="build.gradle.kts" %}
 ```kotlin
 dependencies {
-    compile("it.skrape:skrapeit-core:0.6.0")
+    compile("it.skrape:skrapeit-core:1.0.0-alpha1")
 }
 ```
 {% endcode %}

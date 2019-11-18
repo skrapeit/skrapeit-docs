@@ -1,8 +1,22 @@
----
-description: allows you to set several options to define your request.
----
+# Http-Client
 
-# Request Options
+skrape-it offers an intuitive and DSL-controlled http client to make parsing websites as comfortable as possible. A special feature is the mode parameter, which allows web pages to be client-side rendered \(e.g. pages created with frameworks like React.js, Angular or Vue.js or pages manipulated with jQuery or other javascript\).
+
+```kotlin
+skrape {
+    // ... request options goes here
+    
+    extract {
+        // working with the resonse
+    }
+}
+```
+
+{% hint style="info" %}
+The http-request is only executed after either the [**`extract`**](extracting-data-from-websites.md) or [**`expect`**](basic-test-scenario.md) function has been called. This behaviour also allows to preconfigure the http-client for multiple calls.
+{% endhint %}
+
+### Request Options
 
 {% hint style="info" %}
 **All** of the available **options** already **have reasonable defaults** which aim to make the use of skrape{it} as easy and intuitive as possible.
@@ -141,8 +155,9 @@ description: allows you to set several options to define your request.
       <td style="text-align:left"><b>mode</b>
       </td>
       <td style="text-align:left">
-        <p>For server-side rendered Websites, XML-responses you should always use
-          the default mode because it&apos;s more performant (good old HTTP request).</p>
+        <p>For server-side rendered Websites or other XML related responses you should
+          always use the default mode (<em>SOURCE</em>) because it&apos;s more performant
+          (good old HTTP request).</p>
         <p>If you need to parse client side rendered Websites (e.g. build with React.js,
           Vue.js, Angular or jQuery) try the DOM mode.</p>
       </td>
