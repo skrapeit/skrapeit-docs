@@ -14,8 +14,7 @@ In order to use the MockMvc-extension it's required to have the [**skrapeit-core
 
 {% tabs %}
 {% tab title="Maven" %}
-{% code-tabs %}
-{% code-tabs-item title="pom.xml" %}
+{% code title="pom.xml" %}
 ```markup
 <dependency>
    <groupId>it.skrape</groupId>
@@ -30,19 +29,16 @@ In order to use the MockMvc-extension it's required to have the [**skrapeit-core
    <scope>test</scope>
 </dependency>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 {% endtab %}
 
 {% tab title="Gradle" %}
-{% code-tabs %}
-{% code-tabs-item title="build.gradle.kts" %}
+{% code title="build.gradle.kts" %}
 ```kotlin
 testCompile("it.skrape:skrapeit-core:+")
 testCompile("it.skrape:skrapeit-mockmvc:+")
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 

@@ -35,11 +35,13 @@ class ExampleTest {
                 statusMessage toBe "OK"
                 contentType toBe "text/html; charset=UTF-8"
 
-                element("p") {
-                    text() toBe "i'm a paragraph"
-                }
-                elements("p") {
-                    size toBe 2
+                p {
+                    findFirst {
+                        text toBe "i'm a paragraph"
+                    }
+                    findAll {
+                        size toBe 2
+                    }
                 }
             }
         }
@@ -61,11 +63,13 @@ class ExampleTest {
                 assertThat(statusMessage).isEqualTo("OK")
                 assertThat(contentType).isEqualTo("text/html; charset=UTF-8")
 
-                element("p") {
-                    assertThat(text()).isEqualTo("i'm a paragraph")
-                }
-                elements("p") {
-                    assertThat(size).isEqualTo(2)
+                p {
+                    findFirst {
+                        assertThat(text()).isEqualTo("i'm a paragraph")
+                    }
+                    findAll {
+                        assertThat(size).isEqualTo(2)
+                    }
                 }
             }
         }
@@ -86,11 +90,13 @@ class ExampleTest : StringSpec({
                 statusMessage shouldBe "OK"
                 contentType shouldBe "text/html; charset=UTF-8"
 
-                element("p") {
-                    text() shouldBe "i'm a paragraph"
-                }
-                elements("p") {
-                    size shouldBe 2
+                p {
+                    findFirst {
+                        text toBe "i'm a paragraph"
+                    }
+                    findAll {
+                        size toBe 2
+                    }
                 }
             }
         }
@@ -111,11 +117,13 @@ object ExampleSpec: Spek({
                     statusMessage toBe "OK"
                     contentType toBe "text/html; charset=UTF-8"
     
-                    element("p") {
-                        text() toBe "i'm a paragraph"
-                    }
-                    elements("p") {
-                        size toBe 2
+                    p {
+                        findFirst {
+                            text toBe "i'm a paragraph"
+                        }
+                        findAll {
+                            size toBe 2
+                        }
                     }
                 }
             }
@@ -137,11 +145,13 @@ object ExampleSpec: Spek({
                     assertThat(statusMessage).isEqualTo("OK")
                     assertThat(contentType).isEqualTo("text/html; charset=UTF-8")
     
-                    element("p") {
-                        assertThat(text()).isEqualTo("i'm a paragraph")
-                    }
-                    elements("p") {
-                        assertThat(size).isEqualTo(2)
+                    p {
+                        findFirst {
+                            text toBe "i'm a paragraph"
+                        }
+                        findAll {
+                            size toBe 2
+                        }
                     }
                 }
             }

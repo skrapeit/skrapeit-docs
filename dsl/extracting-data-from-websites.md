@@ -38,13 +38,11 @@ fun main() {
 }
 ```
 
-{% code-tabs %}
-{% code-tabs-item title="Will print extracted data to the console" %}
+{% code title="Will print extracted data to the console" %}
 ```bash
 > skrapeit's repos are [skrape.it]
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 {% hint style="info" %}
 1⃣ We are in the scope of skrape{} here. This is the place to configure your request. The code example we are only defining the url we want to make a request against but there are a lot [**more options to configure the request**](how-to-make-a-http-request.md).

@@ -22,8 +22,7 @@ When using **skrape{it}**'s DOM mode it emulates to be a real browser, executes 
 
 **Let's assume a pretty basic scenario. We want to make a request to a website that is rendering data via Javascript. For instance it's markup could look like this - that is adding an extra div element including some text.** 
 
-{% code-tabs %}
-{% code-tabs-item title="Example Markup that renders elements via Javascipt" %}
+{% code title="Example Markup that renders elements via Javascipt" %}
 ```markup
 <!DOCTYPE html>
 <html lang="en">
@@ -46,11 +45,9 @@ When using **skrape{it}**'s DOM mode it emulates to be a real browser, executes 
     </script>
 </html>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="How to scrape client-side rendered DOM elements" %}
+{% code title="How to scrape client-side rendered DOM elements" %}
 ```kotlin
 fun main() {
     val scrapedData = skrape {
@@ -63,16 +60,13 @@ fun main() {
     println(scrapedData)
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
-{% code-tabs %}
-{% code-tabs-item title="Will print extracted data to the console" %}
+{% code title="Will print extracted data to the console" %}
 ```bash
 > I have been dynamically added via Javascript
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 
 

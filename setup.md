@@ -6,8 +6,7 @@
 
 {% tabs %}
 {% tab title="Maven" %}
-{% code-tabs %}
-{% code-tabs-item title="pom.xml" %}
+{% code title="pom.xml" %}
 ```markup
 <dependency>
   <groupId>it.skrape</groupId>
@@ -15,20 +14,17 @@
   <version>0.6.0</version>
 </dependency>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 {% endtab %}
 
 {% tab title="Gradle" %}
-{% code-tabs %}
-{% code-tabs-item title="build.gradle.kts" %}
+{% code title="build.gradle.kts" %}
 ```kotlin
 dependencies {
     compile("it.skrape:skrapeit-core:0.6.0")
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 
