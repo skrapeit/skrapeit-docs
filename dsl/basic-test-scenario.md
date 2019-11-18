@@ -33,7 +33,7 @@ class ExampleTest {
             expect {
                 statusCode toBe 200
                 statusMessage toBe "OK"
-                contentType toBe "text/html; charset=UTF-8"
+                contentType toBe TEXT_HTML_UTF8
 
                 p {
                     findFirst {
@@ -88,7 +88,7 @@ class ExampleTest : StringSpec({
             expect {
                 statusCode shouldBe 200
                 statusMessage shouldBe "OK"
-                contentType shouldBe "text/html; charset=UTF-8"
+                contentType shouldBe TEXT_HTML_UTF8
 
                 p {
                     findFirst {
@@ -115,7 +115,7 @@ object ExampleSpec: Spek({
                 expect {
                     statusCode toBe 200
                     statusMessage toBe "OK"
-                    contentType toBe "text/html; charset=UTF-8"
+                    contentType toBe TEXT_HTML_UTF8
     
                     p {
                         findFirst {
