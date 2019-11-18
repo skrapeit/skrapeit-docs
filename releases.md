@@ -14,13 +14,20 @@ description: >-
 
 
 
+## 1.0.0-alpha2 - 18.11.19
+
+### Added
+
+* support to build complex css-selectors for elements via DSL
+* support element picking by string invoke of css query selector
+
 ## 1.0.0-alpha1 - 23.10.19
 
 #### ⚠ This release is including breaking changes \(elements, element, $, el - functions has been kicked out\)
 
 ### Added
 
-* support to build css-selectors for elements via DSL
+* support to pick css-selectors for elements via DSL
 
 ## 0.6.0 - 09.05.19
 
