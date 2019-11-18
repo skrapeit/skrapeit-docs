@@ -14,6 +14,16 @@ description: >-
 
 
 
+
+
+## 1.0.0-alpha1 - 23.10.19
+
+#### ⚠ This release is including breaking changes \(elements, element, $, el - functions has been kicked out\)
+
+### Added
+
+* support to build css-selectors for elements via DSL
+
 ## 0.6.0 - 09.05.19
 
 ### Added
