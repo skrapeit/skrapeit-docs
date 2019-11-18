@@ -5,10 +5,10 @@
 > Martin Fowler
 
 ```kotlin
-class CompleteSkrapeItExample {
+class CompleteSkrapeItExampleTest {
     
-    @Test
-    internal fun `dsl can skrape by url`() {
+@Test
+internal fun `dsl can skrape by url`() {
     skrape {
         url = "http://localhost:8080/example"
         
