@@ -120,3 +120,31 @@ htmlDocument(someHtml) {
 
 As shown above Skrape{it} provides the possibility to pick elements by either use its corresponding dsl function or via String invokation. Both will create a **`CssSelector`**-scope that allows us to build complex css-selectors in an idiomatic fashion.
 
+Let's imagine we want to create a selector that is matching the following complex html element:   
+`<button class="foo bar" fizz="buzz" disabled>click me</button>`
+
+We could either archive this by using a css query selector:
+
+```kotlin
+htmlDocument {
+    "button.foo.bar[fizz='buzz'][disabled]" {
+        findFirst { /* will pick first occurence */ }
+        findAll { /* will pick all occurences */ }
+    }
+}
+```
+
+or we could do it even more readable and less error prone:
+
+```kotlin
+htmlDocument {
+    button {
+        withClass = "foo" and "bar"
+        withAttribute = "fizz" to "buzz"
+        withAttributeKey = "disabled"
+        findFirst { /* will pick first occurence */ }
+        findAll { /* will pick all occurences */ }
+    }
+}
+```
+
