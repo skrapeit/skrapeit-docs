@@ -40,7 +40,7 @@ Super-powers are granted randomly so please submit an [**issue**](https://github
 🤝 Contributions are very welcome as well.
 {% endhint %}
 
-**Using bleeding edge features before official release** 🚀 
+### **Using bleeding edge features before official release** 🚀 
 
 We are offering snapshot releases via jitpack. Thereby you can install every commit and version you want. But be careful, these are non official releases and may be unstable as well as breaking changes can occur at any time.
 
