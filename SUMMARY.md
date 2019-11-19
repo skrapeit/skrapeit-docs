@@ -12,6 +12,7 @@
   * [JS-rendered sites](dsl/extract-client-side-rendered-data.md)
 * [Releases](releases.md)
 * [Examples](examples/README.md)
+  * [Grab all links from a Website](examples/grab-all-links-from-a-website.md)
   * [Creating a RESTful API \(Spring-Boot\)](examples/most-simple-spring-boot-example.md)
 * [GitHub Repo](https://github.com/skrapeit/skrape.it)
 
