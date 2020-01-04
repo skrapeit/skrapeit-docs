@@ -14,8 +14,7 @@ All of the interesting parts are marked with  an \(ℹ️\) and explained at the
 
 ```kotlin
 import it.skrape.extract
-import it.skrape.selects.`$`
-import it.skrape.selects.el
+import it.skrape.selects.htmlDocument
 import it.skrape.skrape
 
 data class MyScrapedData(
@@ -28,10 +27,12 @@ fun main() {
         url = "https://github.com/skrapeit" //ℹ️1
         
         extract {
-            MyScrapedData(
-                    userName = el(".h-card .p-nickname").text(), //ℹ️2
-                    repositoryNames = `$`("span.repo").map { it.text() } //ℹ️3
-            )
+            htmlDocument {
+                MyScrapedData(
+                    userName = select(".h-card .p-nickname").text(), //ℹ️2
+                    repositoryNames = select("span.repo").map { it.text() } //ℹ️3
+                )
+            }
         }
     }
     println("${githubUserData.userName}'s repos are ${githubUserData.repositoryNames}")
