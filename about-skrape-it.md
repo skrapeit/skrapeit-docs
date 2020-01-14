@@ -16,9 +16,16 @@
 * **Slack**: Join the [**\#skrape-it**](https://kotlinlang.slack.com/archives/CSPDWD4R4) channel on the Kotlin Slack.
 * **Twitter**: Follow [**@skrape\_it**](https://twitter.com/skrape_it) on Twitter for updates and release notifications.
 
-## License
+## Open source
 
-Skrape{it} is licensed under the MIT-license.
+**Skrape{it}** is an open source project distributed under the liberal [**MIT license**](https://raw.githubusercontent.com/skrapeit/skrape.it/master/LICENSE).    
+The source code is available at [**GitHub**](https://github.com/skrapeit/skrape.it). 
+
+## Sponsorship
+
+**Skrape{it}** **is** and **always** will be **free and open-source**. However your sponsorship of this project is greatly appreciated and will fund the caffeine and pizzas that fuel its development.
+
+To sponsor Skrape{it}, just click this button → [![Donate](https://img.shields.io/badge/-donate-blue.svg?logo=paypal)](https://www.paypal.me/skrapeit)
 
 ## Acknowledgments
 
