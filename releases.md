@@ -10,9 +10,23 @@ description: >-
 >
 > test-coverage: [![Codecov](https://img.shields.io/codecov/c/github/skrapeit/skrape.it.svg)](https://codecov.io/gh/skrapeit/skrape.it)
 
+## 1.0.0-alpha4.1 - 15.01.20
 
+### Bugfix
 
+* fix `findAll`  functionality 
 
+### Added
+
+* convenient way to extract list of text \(`eachText`\)
+
+## 1.0.0-alpha3 - 07.01.20
+
+### Added
+
+* add more convenient features to the HTTP client
+  * url can either be passed as plain String or by usage of `urlBuilder`
+  * supports basic-auth
 
 ## 1.0.0-alpha2 - 18.11.19
 
