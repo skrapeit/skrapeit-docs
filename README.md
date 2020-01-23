@@ -1,5 +1,8 @@
 ---
-description: A Story of Deserializing HTML / XML.
+description: >-
+  A Kotlin-based HTML / XML deserialization library that places particular
+  emphasis on ease of use and a high level of readability by providing an
+  intuitive DSL.
 ---
 
 # Introduction
