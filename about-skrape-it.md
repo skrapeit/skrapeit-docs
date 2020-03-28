@@ -7,7 +7,8 @@
 * \*\*\*\*[**Django Cass**](https://github.com/djcass44)\*\*\*\*
 * [**Dmitriy aka DeKaN**](https://github.com/DeKaN)\*\*\*\*
 * \*\*\*\*[**Fredrik Henricsson**](https://github.com/fejd)\*\*\*\*
-* [**Gustavo Fão**](https://github.com/gustavo-valvassori-codeminer42)\*\*\*\*
+* [**Gustavo Fão**](https://github.com/gustavo-valvassori-codeminer42)
+* [**Mikaël Peltier**](https://github.com/mikaelpeltier)\*\*\*\*
 * [**Silvio Henrique dos Reis Pereira**](https://github.com/silvio-pereira-ifood)\*\*\*\*
 
 ### Suggestions and contributions are welcome.
