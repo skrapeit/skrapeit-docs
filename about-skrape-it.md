@@ -4,12 +4,13 @@
 
 **Skrape{it}** was written by [**Christian Dräger**](https://github.com/christian-draeger) with contributions from:
 
+* \*\*\*\*[**Gregor Billing**](https://github.com/suushiemaniac)\*\*\*\*
 * \*\*\*\*[**Django Cass**](https://github.com/djcass44)\*\*\*\*
 * [**Dmitriy aka DeKaN**](https://github.com/DeKaN)\*\*\*\*
+* \*\*\*\*[**Gustavo Fão**](https://github.com/gustavo-valvassori-codeminer42)
 * \*\*\*\*[**Fredrik Henricsson**](https://github.com/fejd)\*\*\*\*
-* [**Gustavo Fão**](https://github.com/gustavo-valvassori-codeminer42)
-* [**Mikaël Peltier**](https://github.com/mikaelpeltier)\*\*\*\*
-* [**Silvio Henrique dos Reis Pereira**](https://github.com/silvio-pereira-ifood)\*\*\*\*
+* \*\*\*\*[**Mikaël Peltier**](https://github.com/mikaelpeltier)\*\*\*\*
+* \*\*\*\*[**Silvio Henrique dos Reis Pereira**](https://github.com/silvio-pereira-ifood)\*\*\*\*
 
 ### Suggestions and contributions are welcome.
 
