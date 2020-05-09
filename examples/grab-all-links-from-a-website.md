@@ -9,7 +9,7 @@ fun main() {
             htmlDocument {
                 a {
                     findAll {
-                        eachHrefAsAbsoluteLink
+                        eachHrefAsAbsoluteLink()
                     }
                 }
             }
