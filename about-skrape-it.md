@@ -5,6 +5,7 @@
 **Skrape{it}** was written by [**Christian Dräger**](https://github.com/christian-draeger) with contributions from:
 
 * \*\*\*\*[**Gregor Billing**](https://github.com/suushiemaniac)\*\*\*\*
+* [**Andy Burris**](https://github.com/andb3)\*\*\*\*
 * \*\*\*\*[**Django Cass**](https://github.com/djcass44)\*\*\*\*
 * \*\*\*\*[**Gustavo Fão**](https://github.com/gustavo-valvassori-codeminer42)
 * \*\*\*\*[**Fredrik Henricsson**](https://github.com/fejd)\*\*\*\*
