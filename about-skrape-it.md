@@ -6,9 +6,9 @@
 
 * \*\*\*\*[**Gregor Billing**](https://github.com/suushiemaniac)\*\*\*\*
 * \*\*\*\*[**Django Cass**](https://github.com/djcass44)\*\*\*\*
-* [**Dmitriy aka DeKaN**](https://github.com/DeKaN)\*\*\*\*
 * \*\*\*\*[**Gustavo Fão**](https://github.com/gustavo-valvassori-codeminer42)
 * \*\*\*\*[**Fredrik Henricsson**](https://github.com/fejd)\*\*\*\*
+* \*\*\*\*[**Dmitriy Konopelkin**](https://github.com/DeKaN)\*\*\*\*
 * \*\*\*\*[**Mikaël Peltier**](https://github.com/mikaelpeltier)\*\*\*\*
 * \*\*\*\*[**Silvio Henrique dos Reis Pereira**](https://github.com/silvio-pereira-ifood)\*\*\*\*
 
