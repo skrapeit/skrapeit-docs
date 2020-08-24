@@ -1,7 +1,8 @@
 # Grab all links from a Website
 
 ```bash
-val links: List<String> = skrape {
+fun main() {
+    val links: List<String> = skrape {
         url = "https://kotlinlang.org/docs/reference/"
         mode = Mode.SOURCE
         extract {
@@ -14,8 +15,8 @@ val links: List<String> = skrape {
             }
         }
     }
-
-println(links)
+    println(links)
+}
 ```
 
 {% hint style="info" %}
@@ -30,5 +31,52 @@ And here we go:
 ```
 {% endcode %}
 
+## Grab all links including its text from a Website
 
+```bash
+fun main() {
+    val links: Map<String, String> = skrape {
+        url = "https://kotlinlang.org/docs/reference/"
+        extract {
+            htmlDocument {
+                a {
+                    withAttributeKey = "href"
+                    findAll {
+                        map {
+                            it.text to it.attribute("abs:href")
+                        }.toMap()
+                    }
+                }
+
+            }
+        }
+    }
+
+    links.forEach { (text, link) -> println("$text --> $link")}
+}
+```
+
+And here we go:
+
+{% code title="console output:" %}
+```text
+Kotlin Heroes Coding Challenge Take Part! --> https://www.jetbrains.com/promo/kotlin-heroes/
+Kotlin --> https://kotlinlang.org/
+1.3.61 --> https://github.com/JetBrains/kotlin/releases/tag/v1.3.61
+Learn --> https://kotlinlang.org/docs/reference/
+Community --> https://kotlinlang.org/community/
+Play --> https://play.kotlinlang.org
+Language Guide --> https://kotlinlang.org/docs/reference/
+Tutorials --> https://kotlinlang.org/docs/tutorials/
+Books --> https://kotlinlang.org/docs/books.html
+More resources --> https://kotlinlang.org/docs/resources.html
+Kotlin for Server Side --> https://kotlinlang.org/docs/reference/server-overview.html
+Kotlin for Android --> https://kotlinlang.org/docs/reference/android-overview.html
+Kotlin for JavaScript --> https://kotlinlang.org/docs/reference/js-overview.html
+Kotlin for Native --> https://kotlinlang.org/docs/reference/native-overview.html
+Kotlin for Data Science --> https://kotlinlang.org/docs/reference/data-science-overview.html
+Coroutines --> https://kotlinlang.org/docs/reference/coroutines-overview.html
+...
+```
+{% endcode %}
 

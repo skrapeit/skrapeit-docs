@@ -1,5 +1,8 @@
 ---
-description: A Story of Deserializing HTML / XML.
+description: >-
+  A Kotlin-based HTML / XML deserialization library that places particular
+  emphasis on ease of use and a high level of readability by providing an
+  intuitive DSL.
 ---
 
 # Introduction
@@ -25,14 +28,4 @@ The major paradigms of the library are that it's flexible, highly readable, not 
 
 Nearly true. **Skrape{it}** is using jSoup internally to parse HTML documents. But since jSoup is written in Java it's neither null-safe nor intuitiv to use and read. Skrape{it} abstracts the idea of jSoup but it's easy to use by having a focus on readability by simplicity and has **native support for scraping of client-side rendered webpages** which is not possible with jSoup. The whole rendering will happen inside the JVM - from which it follows that no browser installation and ramp-up is needed \(contrary to Selenium\).  
 Furthermore, Skrape{it} offers the possibility to verify expectations by offering a DSL that is specifically designed to do HTML-related assertions and bindings for well-known testing libraries and HTTP clients.
-
-## Open source
-
-### _Skrape{it}_ is an open source project distributed under the liberal [MIT license](https://raw.githubusercontent.com/skrapeit/skrape.it/master/LICENSE).  The source code is available at [GitHub](https://github.com/skrapeit/skrape.it).
-
-#### Sponsorship
-
-**Skrape{it}** **is** and **always** will be **free and open-source**. However your sponsorship of this project is greatly appreciated and will fund the caffeine and pizzas that fuel its development.
-
-To sponsor Skrape{it}, just click this button → [![Donate](https://img.shields.io/badge/-donate-blue.svg?logo=paypal)](https://www.paypal.me/skrapeit)
 

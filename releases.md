@@ -12,7 +12,38 @@ description: >-
 
 
 
+## 1.0.0-alpha6 - 26.02.20
 
+### Added
+
+* add more features to parser \(`htmlDocument`\) function. it now directly supports:
+  * set charset
+  * jsExecution
+  * setting baseUri - that allows you to extract relative links as absolute link
+
+## 1.0.0-alpha5 - 31.01.20
+
+### Added
+
+* multiple matching elements are now handled as listOf&lt;DocElement&gt;\(\) and theirby behave like normal lists - which should be more intuitive to use as DocElements
+
+## 1.0.0-alpha4.1 - 15.01.20
+
+### Bugfix
+
+* fix `findAll`  functionality 
+
+### Added
+
+* convenient way to extract list of text \(`eachText`\)
+
+## 1.0.0-alpha3 - 07.01.20
+
+### Added
+
+* add more convenient features to the HTTP client
+  * url can either be passed as plain String or by usage of `urlBuilder`
+  * supports basic-auth
 
 ## 1.0.0-alpha2 - 18.11.19
 
