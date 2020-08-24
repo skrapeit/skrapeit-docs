@@ -144,8 +144,10 @@ fun main() {
 {% endhint %}
 
 {% hint style="info" %}
-\*️⃣ In the next few lines of code we are doing a complex and nested search for of element. The example will select `div.pinned-item-list-item p:(2)` but in a much more readable way than using a plain CSS-selector query.
+\*️⃣ In the next few lines of code we are doing a complex and nested search for of element. The example will select an equivalent of the following CSS selector:`div.pinned-item-list-item p:nth-of-type(2) a.pinned-item-meta.muted-link[href='/skrapeit/skrape.it/stargazers'],`but in a much more readable way than using a plain CSS-selector query.
+{% endhint %}
 
+{% hint style="info" %}
 1️⃣5️⃣ As you will see from here and the next marker you can nest a html element query to keep complex selections comprehensible and readable.
 
 1️⃣6️⃣ element selection are nesting, so we will search for the second p-tag inside the **parent** `div.pinned-item-list-item` only. This is really powerful behaviour. 🙃 
