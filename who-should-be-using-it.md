@@ -25,6 +25,10 @@ description: Deserialize HTML? Why should that be useful?
 {% endhint %}
 
 {% hint style="success" %}
+"I want to parse HTML from a raw String or a file in an intuitive and highly readable way, without the need of messing around with crazy CSS-selector query knowledge!"
+{% endhint %}
+
+{% hint style="success" %}
 "I would like to test the endpoints of my application that produces HTML/XML in a meaningful and idiomatic way!"
 {% endhint %}
 

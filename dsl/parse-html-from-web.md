@@ -6,14 +6,21 @@ skrape-it offers an intuitive and DSL-controlled http client to make parsing web
 skrape {
     // ... request options goes here
     
+    expect {
+        // ... you can do some checks in here by working on the http response
+        
+        htmlDocument { // will parse the HTTP requests response body
+            // ... parsing and do stuff with the parsed data goes here
+        }
+    }
     extract {
-        // working with the resonse
+        // same behaviour as expect BUT returning a Generic, that allows you to create opbjects and pass scrped data to them.
     }
 }
 ```
 
 {% hint style="info" %}
-The http-request is only executed after either the [**`extract`**](extracting-data-from-websites.md) or [**`expect`**](basic-test-scenario.md) function has been called. This behaviour also allows to preconfigure the http-client for multiple calls.
+The http-request is only executed after either the [**`extract`**](extracting-data-from-websites.md) or [**`expect`**](basic-test-scenario.md) function has been called. This behaviour also allows to preconfigure the http-client for multiple calls. If you use expect as well as extract it will only make 1 request.
 {% endhint %}
 
 ### Request Options
