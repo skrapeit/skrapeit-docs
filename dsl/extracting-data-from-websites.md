@@ -6,7 +6,7 @@ description: >-
 
 # Scraping
 
-💡 **Let's assume a pretty basic scenario. We want to make a request to a github profile page and extract the nickname of the profiles owner as well as getting the names of them pinned repositories.** 
+💡 **Let's assume a pretty basic scenario. We want to make a request to a github profile page and extract the nickname of the profiles owner as well as getting the names of them pinned repositories and some other informations that demonstrates the usage and power of skrape{it}'s DSL.** 💪 ****
 
 ### Documentation by Example
 
