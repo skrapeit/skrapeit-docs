@@ -54,7 +54,10 @@ fun main() {
         url = "http://some.url"
         mode = Mode.DOM // <--- here's the magic
         extract { 
-            element("div.dynamic").text()
+            div {
+                withClass = "dynamic"
+                findFirst { text }
+            }
         }
     }
     println(scrapedData)
