@@ -26,6 +26,6 @@ The major paradigms of the library are that it's flexible, highly readable, not 
 
 > Hold on, hold on. I'm already knowing a library that is doing what you described, it's called [jSoup](https://jsoup.org) or I could  just use Selenium in order to behave in the manner mentioned above.
 
-Nearly true. **Skrape{it}** is using jSoup internally to parse HTML documents. But since jSoup is written in Java it's neither null-safe nor intuitiv to use and read. Skrape{it} abstracts the idea of jSoup but it's easy to use by having a focus on readability by simplicity and has **native support for scraping of client-side rendered webpages** which is not possible with jSoup. The whole rendering will happen inside the JVM - from which it follows that no browser installation and ramp-up is needed \(contrary to Selenium\).  
+Nearly true. **Skrape{it}** is using jSoup internally to parse HTML documents. But since jSoup is written in Java it's neither null-safe nor intuitive to use and read. Skrape{it} abstracts the idea of jSoup but it's easy to use by having a focus on readability by simplicity and has **native support for scraping of client-side rendered webpages** which is not possible with jSoup. The whole rendering will happen inside the JVM - from which it follows that no browser installation and ramp-up is needed \(contrary to Selenium\).  
 Furthermore, Skrape{it} offers the possibility to verify expectations by offering a DSL that is specifically designed to do HTML-related assertions and bindings for well-known testing libraries and HTTP clients.
 
