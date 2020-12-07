@@ -1,7 +1,7 @@
 ---
 description: >-
   If you want to extract data from websites this is the part of the
-  documentation you where looking for.
+  documentation you were looking for.
 ---
 
 # Scraping
