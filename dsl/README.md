@@ -14,18 +14,19 @@ class CompleteSkrapeItExampleTest {
 @Test
 internal fun `dsl can skrape by url`() {
     skrape {
-        url = "http://localhost:8080/example"
+        request { // configure the fetcher aka http clients request
+            url = "http://localhost:8080/example"
+            method = GET // optional -> defaults to GET
+            timeout = 5000 // optional -> defaults to 5000ms
+            followRedirects = true // optional -> defaults to true
+            userAgent = "some custom user agent" // optional -> defaults to "Mozilla/5.0 skrape.it"
+            cookies = mapOf("some-cookie-name" to "some-value") // optional
+            headers = mapOf("some-custom-header" to "some-value") // optional
+        }
         
-        mode = DOM // optional -> defaults to SOURCE (plain http request) - DOM will also render JS
-        method = GET // optional -> defaults to GET
-        timeout = 5000 // optional -> defaults to 5000ms
-        followRedirects = true // optional -> defaults to true
-        userAgent = "some custom user agent" // optional -> defaults to "Mozilla/5.0 skrape.it"
-        cookies = mapOf("some-cookie-name" to "some-value") // optional
-        headers = mapOf("some-custom-header" to "some-value") // optional
-        
-        extract {
-            htmlDocument {
+        extract { // execute the request and invoke its results
+            
+            htmlDocument { // parse the response body to a skrape it Doc object
                 // all offical html and html5 elements are supported by the DSL
                 div {
                     withClass = "foo" and "bar" and "fizz" and "buzz"

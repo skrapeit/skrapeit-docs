@@ -18,11 +18,11 @@
 ## Extensions
 
 * [MockMvc](extensions/mockmvc/README.md)
-  * [Releases](extensions/mockmvc/releases.md)
-  * [GitHub Repo](https://github.com/skrapeit/skrapeit-mockmvc-extension)
+  * [Getting Started](extensions/mockmvc/releases.md)
+  * [GitHub Repo](https://github.com/skrapeit/skrape.it/mock-mvc-extension)
 * [Ktor](extensions/ktor/README.md)
-  * [Releases](extensions/ktor/releases.md)
-  * [GitHub Repo](https://github.com/skrapeit/skrapeit-ktor-extension)
+  * [Getting Started](extensions/ktor/releases.md)
+  * [GitHub Repo](https://github.com/skrapeit/skrape.it/ktor-extension)
 
 ---
 

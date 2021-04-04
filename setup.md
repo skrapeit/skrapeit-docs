@@ -2,7 +2,9 @@
 
 ## Getting Super Powers
 
-**Becoming a super hero is a fairly straight forward process:**
+**Becoming a super hero is a fairly straight forward process.**
+
+Checkout the latest releases on [maven central](https://search.maven.org/search?q=g:it.skrape) and just add the following to your build tool of choice to get the full feature set:
 
 {% tabs %}
 {% tab title="Maven" %}
