@@ -10,8 +10,8 @@
 ```markup
 <dependency>
   <groupId>it.skrape</groupId>
-  <artifactId>skrapeit-core</artifactId>
-  <version>1.0.0-alpha2</version>
+  <artifactId>skrapeit</artifactId>
+  <version>1.0.0</version>
 </dependency>
 ```
 {% endcode %}
@@ -21,7 +21,7 @@
 {% code title="build.gradle.kts" %}
 ```kotlin
 dependencies {
-    compile("it.skrape:skrapeit-core:1.0.0-alpha2")
+    compile("it.skrape:skrapeit:1.0.0")
 }
 ```
 {% endcode %}
