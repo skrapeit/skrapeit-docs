@@ -1,8 +1,26 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Who should be using it](who-should-be-using-it.md)
-* [Setup](setup.md)
+
+## overview
+
+* [Setup](overview/setup.md)
+* [Who should be using it](overview/who-should-be-using-it.md)
+
+## Http Client
+
+* [Untitled](http-client/untitled.md)
+
+## Parser
+
+* [Untitled](parser/untitled.md)
+
+## assertions
+
+* [Untitled](assertions/untitled.md)
+
+---
+
 * [How to Use](dsl/README.md)
   * [Http-Client](dsl/parse-html-from-web.md)
   * [Parsing HTML](dsl/parsing-html.md)
