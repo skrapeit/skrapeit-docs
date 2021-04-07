@@ -9,11 +9,11 @@
 
 ## Http Client
 
-* [Overview](http-client/overview/README.md)
-  * [HttpFetcher](http-client/overview/httpfetcher.md)
-  * [AsyncFetcher](http-client/overview/asyncfetcher.md)
-  * [BrowserFetcher](http-client/overview/browserfetcher.md)
-  * [Implement your own](http-client/overview/implement-your-own.md)
+* [Overview](http-client/overview.md)
+* [HttpFetcher](http-client/httpfetcher.md)
+* [AsyncFetcher](http-client/asyncfetcher.md)
+* [BrowserFetcher](http-client/browserfetcher.md)
+* [Implement your own](http-client/implement-your-own.md)
 * [Request Options](http-client/parse-html-from-web.md)
 * [Pre-configure client](http-client/pre-configure-client.md)
 

@@ -6,14 +6,14 @@ description: 'Why does skrape{it} provide its own http client implementations?'
 
 Skrape{it} offers an unified, intuitive and DSL-controlled way to make parsing of websites as comfortable as possible. 
 
-* [x] [Http-Client DSL](../parse-html-from-web.md) without verbosity and ceremony to make requests and corresponding request options like headers, cookies etc. in a fluent style interface. 
-* [x] [Pre-configure a client](../pre-configure-client.md) once to either reuse it or adjust only the things that differ at certain requests - especially handy while working with authentication flows or custom headers.
+* [x] [Http-Client DSL](parse-html-from-web.md) without verbosity and ceremony to make requests and corresponding request options like headers, cookies etc. in a fluent style interface. 
+* [x] [Pre-configure a client](pre-configure-client.md) once to either reuse it or adjust only the things that differ at certain requests - especially handy while working with authentication flows or custom headers.
 * [x] Can [handle client side rendered web pages](browserfetcher.md) \(e.g. pages created with frameworks like React.js, Angular or Vue.js or pages manipulated with jQuery or other javascript\)
 
-A Http request is done as easy as in the given example. Just call the `skrape` function wherever you want in your code. It will force you to pass a [fetcher](./#the-different-fetchers) and make further[ request option](../parse-html-from-web.md) available in the clojure.
+A Http request is done as easy as in the given example. Just call the `skrape` function wherever you want in your code. It will force you to pass a [fetcher](overview.md#the-different-fetchers) and make further[ request option](parse-html-from-web.md) available in the clojure.
 
 ```kotlin
-skrape(HttpFetcher) {
+skrape(HttpFetcher) { // <-- pass any Fetcher, e.g. HttpFetcher, BrowserFetcher, ...
     // ... request options goes here, e.g the most basic would be url
     url = "https://docs.skrape.it"
     
@@ -23,7 +23,7 @@ skrape(HttpFetcher) {
 ```
 
 {% hint style="info" %}
-The http-request is only executed after either the [**`extract`**](../../dsl/extracting-data-from-websites.md) or [**`expect`**](../../dsl/basic-test-scenario.md) function has been called. This behaviour also allows to[ preconfigure the http-client](../pre-configure-client.md) for multiple calls. If you use expect as well as extract it will only make 1 request.
+The http-request is only executed after either the [**`extract`**](../dsl/extracting-data-from-websites.md) or [**`expect`**](../dsl/basic-test-scenario.md) function has been called. This behaviour also allows to[ preconfigure the http-client](pre-configure-client.md) for multiple calls. If you use expect as well as extract it will only make 1 request.
 {% endhint %}
 
 ### The Different Fetchers
@@ -38,7 +38,7 @@ Skrape{it} provides different types of Fetchers \(aka Http-Clients\) that can be
 
 {% page-ref page="browserfetcher.md" %}
 
-#### You want to scrape a simple HTML page from a coroutine?
+#### You want to scrape multiple HTML pages in parallel from inside a coroutine?
 
 {% page-ref page="asyncfetcher.md" %}
 

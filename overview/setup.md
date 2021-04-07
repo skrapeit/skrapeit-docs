@@ -23,7 +23,7 @@ Checkout the latest releases on [maven central](https://search.maven.org/search?
 {% code title="build.gradle.kts" %}
 ```kotlin
 dependencies {
-    compile("it.skrape:skrapeit:1.0.0")
+    implementation("it.skrape:skrapeit:1.0.0")
 }
 ```
 {% endcode %}
