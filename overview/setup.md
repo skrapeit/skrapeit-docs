@@ -13,7 +13,7 @@ Checkout the latest releases on [maven central](https://search.maven.org/search?
 <dependency>
   <groupId>it.skrape</groupId>
   <artifactId>skrapeit</artifactId>
-  <version>1.0.0</version>
+  <version>1.1.1</version>
 </dependency>
 ```
 {% endcode %}
@@ -23,7 +23,7 @@ Checkout the latest releases on [maven central](https://search.maven.org/search?
 {% code title="build.gradle.kts" %}
 ```kotlin
 dependencies {
-    implementation("it.skrape:skrapeit:1.0.0")
+    implementation("it.skrape:skrapeit:1.1.1")
 }
 ```
 {% endcode %}
@@ -44,7 +44,8 @@ Super-powers are granted randomly so please submit an [**issue**](https://github
 
 ### **Using bleeding edge features before official release** 🚀 
 
-We are offering snapshot releases via jitpack. Thereby you can install every commit and version you want. But be careful, these are non official releases and may be unstable as well as breaking changes can occur at any time.
+We are offering snapshot releases by publishing every successful build of a commit that has been pushed to master branch. Thereby you can just install the latest implementation of skrape{it}.  
+Be careful since these are non-official releases and may be unstable as well as breaking changes can occur at any time.
 
 {% tabs %}
 {% tab title="Maven" %}
@@ -53,16 +54,16 @@ We are offering snapshot releases via jitpack. Thereby you can install every com
 <repositories>
     <repository>
         <id>jitpack.io</id>
-        <url>https://jitpack.io</url>
+        <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
     </repository>
 </repositories>
 
 ...
 
 <dependency>
-    <groupId>com.github.skrapeit</groupId>
-    <artifactId>skrape.it</artifactId>
-    <version>master-SNAPSHOT</version>
+    <groupId>it.skrape</groupId>
+    <artifactId>skrapeit</artifactId>
+    <version>0-SNAPSHOT</version>
 </dependency>
 ```
 {% endcode %}
@@ -72,10 +73,19 @@ We are offering snapshot releases via jitpack. Thereby you can install every com
 {% code title="build.gradle.kts" %}
 ```kotlin
 repositories {
-    maven { url "https://jitpack.io" }
+    maven { url = uri("https://oss.sonatype.org/content/repositories/snapshots/") }
 }
 dependencies {
-    implementation("com.github.skrapeit:skrape.it:master-SNAPSHOT")
+    implementation("it.skrape:skrapeit:0-SNAPSHOT") { 
+        isChanging = true 
+    } // version number will stay - implementation may change ...
+}
+
+// optional
+configurations.all {
+    resolutionStrategy {
+        cacheChangingModulesFor(0, "seconds")
+    }
 }
 ```
 {% endcode %}
