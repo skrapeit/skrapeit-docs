@@ -11,8 +11,8 @@
 
 * [Overview](http-client/overview.md)
 * [HttpFetcher](http-client/httpfetcher.md)
-* [AsyncFetcher](http-client/asyncfetcher.md)
 * [BrowserFetcher](http-client/browserfetcher.md)
+* [AsyncFetcher](http-client/asyncfetcher.md)
 * [Implement your own](http-client/implement-your-own.md)
 * [Request Options](http-client/parse-html-from-web.md)
 * [Pre-configure client](http-client/pre-configure-client.md)
