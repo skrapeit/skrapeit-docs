@@ -2,7 +2,9 @@
 
 ### How to Parse HTML aka creating the **`Doc`**-object
 
-Skrape{it} will create a **`Doc`** -object that is representing the parsed HTML Document. 
+Skrape{it} will create a **`Doc`** -object that is representing the parsed HTML Document whenever the htmlDocument{} function has been called.
+
+It can either parse HTML from String, a File or from an HTTP-requests response body \(from web\).  
 
 {% tabs %}
 {% tab title="Parse from Web" %}
@@ -37,7 +39,7 @@ htmlDocument("<div>skrape<b>it</b></div>") {
 
 ### Picking Html-Elements from a Doc
 
-Now that we have a [**`Doc`**-object](parsing-html.md#how-to-parse-html-aka-creating-the-doc-object) this is one of the parts where skrape{it} probably shines the most. It provides the possibility to pick Html-elements in a DSL-ish way. To archive this behaviour skrape{it} provides extension functions on Doc that are representing all available HTML tags following the HTML5 standart.
+Now that we have a [**`Doc`**-object](parsing-html.md#how-to-parse-html-aka-creating-the-doc-object) this is one of the parts where skrape{it} probably shines the most. It provides the possibility to pick Html-elements in a DSL-ish way. To archive this behaviour **skrape{it} provides extension functions on Doc that are representing all available HTML tags following the HTML5 standart.**
 
 ```kotlin
 val someHtml = """
@@ -118,7 +120,7 @@ htmlDocument(someHtml) {
 
 ### Building CSS selectors
 
-As shown above Skrape{it} provides the possibility to pick elements by either use its corresponding dsl function or via String invokation. Both will create a **`CssSelector`**-scope that allows us to build complex css-selectors in an idiomatic fashion.
+As shown above Skrape{it} provides the possibility to pick elements by either use its corresponding DSL function or via String invokation. Both will create a **`CssSelector`**-scope that allows us to build complex css-selectors in an idiomatic fashion.
 
 Let's imagine we want to create a selector that is matching the following complex html element:   
 `<button class="foo bar" fizz="buzz" disabled>click me</button>`
@@ -128,8 +130,8 @@ We could either archive this by using a css query selector:
 ```kotlin
 htmlDocument {
     "button.foo.bar[fizz='buzz'][disabled]" {
-        findFirst { /* will pick first occurence */ }
-        findAll { /* will pick all occurences */ }
+        findFirst { /* will pick first matching occurence */ }
+        findAll { /* will pick all matching occurences */ }
     }
 }
 ```
@@ -142,8 +144,8 @@ htmlDocument {
         withClass = "foo" and "bar"
         withAttribute = "fizz" to "buzz"
         withAttributeKey = "disabled"
-        findFirst { /* will pick first occurence */ }
-        findAll { /* will pick all occurences */ }
+        findFirst { /* will pick first matching occurence */ }
+        findAll { /* will pick all matching occurences */ }
     }
 }
 ```

@@ -1,16 +1,38 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Who should be using it](who-should-be-using-it.md)
-* [Setup](setup.md)
+
+## overview
+
+* [Setup](overview/setup.md)
+* [Who should be using it](overview/who-should-be-using-it.md)
+
+## Http Client
+
+* [Overview](http-client/overview.md)
+* [HttpFetcher](http-client/httpfetcher.md)
+* [BrowserFetcher](http-client/browserfetcher.md)
+* [AsyncFetcher](http-client/asyncfetcher.md)
+* [Implement your own](http-client/implement-your-own.md)
+* [Request Options](http-client/parse-html-from-web.md)
+* [Pre-configure client](http-client/pre-configure-client.md)
+
+## Html Parser <a id="parser"></a>
+
+* [Parsing](parser/untitled.md)
+
+## assertions
+
+* [expect content](assertions/untitled.md)
+
+---
+
 * [How to Use](dsl/README.md)
-  * [Http-Client](dsl/parse-html-from-web.md)
   * [Parsing HTML](dsl/parsing-html.md)
   * [Matchers](dsl/matchers.md)
   * [Testing](dsl/basic-test-scenario.md)
   * [Scraping](dsl/extracting-data-from-websites.md)
   * [JS-rendered sites](dsl/extract-client-side-rendered-data.md)
-* [Releases](releases.md)
 * [Examples](examples/README.md)
   * [Grab all links from a Website](examples/grab-all-links-from-a-website.md)
   * [Creating a RESTful API \(Spring-Boot\)](examples/most-simple-spring-boot-example.md)
@@ -19,9 +41,13 @@
 ## Extensions
 
 * [MockMvc](extensions/mockmvc/README.md)
-  * [Releases](extensions/mockmvc/releases.md)
-  * [GitHub Repo](https://github.com/skrapeit/skrapeit-mockmvc-extension)
+  * [Getting Started](extensions/mockmvc/releases.md)
+  * [GitHub Repo](https://github.com/skrapeit/skrape.it/mock-mvc-extension)
 * [Ktor](extensions/ktor/README.md)
-  * [Releases](extensions/ktor/releases.md)
-  * [GitHub Repo](https://github.com/skrapeit/skrapeit-ktor-extension)
+  * [Getting Started](extensions/ktor/releases.md)
+  * [GitHub Repo](https://github.com/skrapeit/skrape.it/ktor-extension)
+
+---
+
+* [About skrape{it}](about-skrape-it.md)
 
