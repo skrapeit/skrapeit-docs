@@ -1,19 +1,28 @@
-# Releases
+# Getting Started
 
-> latest version: [![maven central](https://img.shields.io/maven-central/v/it.skrape/skrapeit-mockmvc.svg?color=0)](https://search.maven.org/search?q=g:it.skrape%20AND%20a:skrapeit-mockmvc&skrapeit-mockmvc=gav)
->
-> dependency check: [![Known Vulnerabilities](https://snyk.io/test/github/skrapeit/skrapeit-mockmvc-extension/badge.svg?targetFile=pom.xml)](https://snyk.io/test/github/skrapeit/skrapeit-mockmvc-extension?targetFile=pom.xml)
+Just add the following to your existing Spring Project:
 
-## 1.0.2 - 20.04.2019
+{% tabs %}
+{% tab title="Gradle" %}
+{% code title="build.gradle.kts" %}
+```kotlin
+dependencies {
+    compile("it.skrape:skrapeit-mock-mvc-extension:1.0.0")
+}
+```
+{% endcode %}
+{% endtab %}
 
-### Refactoring
-
-* simplified build setup
-
-## 1.0.1 - 17.04.2019
-
-### Added
-
-* Initial release to maven-central
-* extension function for MockMvc's `ResultActions`
+{% tab title="Maven" %}
+{% code title="pom.xml" %}
+```markup
+<dependency>
+  <groupId>it.skrape</groupId>
+  <artifactId>skrapeit-mock-mvc-extension</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
+{% endcode %}
+{% endtab %}
+{% endtabs %}
 

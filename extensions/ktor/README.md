@@ -3,7 +3,7 @@
 ### Setup
 
 {% hint style="info" %}
-In order to use the Ktor-extension it's required to have the [**skrapeit-core**](../../setup.md#getting-super-powers) artifact in the classpath as well as having a proper Ktor setup up and running.
+In order to use the Ktor-extension it's required to have the [**skrapeit-core**](../../overview/setup.md#getting-super-powers) artifact in the classpath as well as having a proper Ktor setup up and running.
 {% endhint %}
 
 {% tabs %}
