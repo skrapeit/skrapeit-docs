@@ -39,7 +39,7 @@ htmlDocument("<div>skrape<b>it</b></div>") {
 
 ### Picking Html-Elements from a Doc
 
-Now that we have a [**`Doc`**-object](parsing-html.md#how-to-parse-html-aka-creating-the-doc-object) this is one of the parts where skrape{it} probably shines the most. It provides the possibility to pick Html-elements in a DSL-ish way. To archive this behaviour **skrape{it} provides extension functions on Doc that are representing all available HTML tags following the HTML5 standart.**
+Now that we have a [**`Doc`**-object](parsing-html.md#how-to-parse-html-aka-creating-the-doc-object) this is one of the parts where skrape{it} probably shines the most. It provides the possibility to pick Html-elements in a DSL-ish way. To archive this behaviour **skrape{it} provides extension functions on Doc that are representing all available HTML tags following the HTML5 standard.**
 
 ```kotlin
 val someHtml = """
