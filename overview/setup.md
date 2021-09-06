@@ -13,7 +13,7 @@ Checkout the latest releases on [maven central](https://search.maven.org/search?
 <dependency>
   <groupId>it.skrape</groupId>
   <artifactId>skrapeit</artifactId>
-  <version>1.1.1</version>
+  <version>1.1.5</version>
 </dependency>
 ```
 {% endcode %}
@@ -23,7 +23,7 @@ Checkout the latest releases on [maven central](https://search.maven.org/search?
 {% code title="build.gradle.kts" %}
 ```kotlin
 dependencies {
-    implementation("it.skrape:skrapeit:1.1.1")
+    implementation("it.skrape:skrapeit:1.1.5")
 }
 ```
 {% endcode %}
