@@ -24,7 +24,7 @@ skrape(HttpFetcher) { // <-- pass any Fetcher, e.g. HttpFetcher, BrowserFetcher,
 ```
 
 {% hint style="info" %}
-The http-request is only executed after either the [**`extract`**](../dsl/extracting-data-from-websites.md) or [**`expect`**](../dsl/basic-test-scenario.md) function has been called. This behaviour also allows to[ preconfigure the http-client](pre-configure-client.md) for multiple calls.
+The http-request is only executed after either the `response` function has been called. This behaviour also allows to[ preconfigure the http-client](pre-configure-client.md) and reusing request settings for multiple calls.
 {% endhint %}
 
 
