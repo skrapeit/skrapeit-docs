@@ -1,15 +1,28 @@
-# Releases
+# Getting Started
 
-> latest version: [![maven central](https://img.shields.io/maven-central/v/it.skrape/skrapeit-ktor.svg?color=0)](https://search.maven.org/search?q=g:it.skrape%20AND%20a:skrapeit-ktor&skrapeit-ktor=gav)
->
-> test-coverage: [![Codecov](https://img.shields.io/codecov/c/github/skrapeit/skrapeit-ktor-extension.svg)](https://codecov.io/gh/skrapeit/skrapeit-ktor-extension)
->
-> dependency check: [![Known Vulnerabilities](https://snyk.io/test/github/skrapeit/skrapeit-ktor-extension/badge.svg?targetFile=pom.xml)](https://snyk.io/test/github/skrapeit/skrapeit-ktor-extension?targetFile=pom.xml)
+Just add the following to your existing Spring Project:
 
-## 1.0.0 - 25.04.2019
+{% tabs %}
+{% tab title="Gradle" %}
+{% code title="build.gradle.kts" %}
+```kotlin
+dependencies {
+    compile("it.skrape:skrapeit-ktor-extension:1.0.0")
+}
+```
+{% endcode %}
+{% endtab %}
 
-### Added
-
-* Initial release to maven-central
-* extension function for Ktors `TestApplicationResponse`
+{% tab title="Maven" %}
+{% code title="pom.xml" %}
+```markup
+<dependency>
+  <groupId>it.skrape</groupId>
+  <artifactId>skrapeit-ktor-extension</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
+{% endcode %}
+{% endtab %}
+{% endtabs %}
 
