@@ -5,7 +5,6 @@
 
 ## overview
 
-* [What it is](overview/what-it-is.md)
 * [Setup](overview/setup.md)
 * [Who should be using it](overview/who-should-be-using-it.md)
 
