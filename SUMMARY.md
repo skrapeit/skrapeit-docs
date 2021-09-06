@@ -1,9 +1,11 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [Why it exists](why-it-exists.md)
 
 ## overview
 
+* [What it is](overview/what-it-is.md)
 * [Setup](overview/setup.md)
 * [Who should be using it](overview/who-should-be-using-it.md)
 
