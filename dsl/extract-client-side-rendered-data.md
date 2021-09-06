@@ -15,7 +15,7 @@ Most modern webpages are dynamically adding elements or data to the DOM by the u
 
 When using **skrape{it}**'s DOM mode it emulates to be a real browser, executes the pages Javascript and returns a parsed representation of a website. It supports parsing of client side rendered markup \(thereby it's possible to scrape or parse websites that uses React.js, Vue.js, Angular, jQuery and so on\). The DOM mode will use the latest Chrome engine to render the page, therefore it provides support for ES6 and modern Javascript features.
 
-💡 Keep in mind: _**Because of the browser emulation it is not as fast as the default mode!**_
+_\*\*\*\*_💡 Keep in mind: _**Because of the browser emulation it is not as fast as the default mode!**_
 {% endhint %}
 
 ## Example
@@ -54,7 +54,10 @@ fun main() {
         url = "http://some.url"
         mode = Mode.DOM // <--- here's the magic
         extract { 
-            element("div.dynamic").text()
+            div {
+                withClass = "dynamic"
+                findFirst { text }
+            }
         }
     }
     println(scrapedData)

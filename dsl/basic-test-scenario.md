@@ -31,16 +31,21 @@ class ExampleTest {
         skrape {
             url = "http://localhost:8080/example"
             expect {
-                statusCode toBe 200
-                statusMessage toBe "OK"
-                contentType toBe TEXT_HTML_UTF8
+                status { 
+                    code toBe 200
+                    message toBe "OK"
+                }
+                contentType toBe ContentTypes.TEXT_HTML_UTF8
 
-                p {
-                    findFirst {
-                        text toBe "i'm a paragraph"
-                    }
-                    findAll {
-                        size toBe 2
+                htmlDocument {
+                    p {
+                        findFirst {
+                            text toBe "i'm a paragraph"
+                        }
+                        findAll {
+                            size toBe 2
+                            toBePresentExactlyTwice // shorthand
+                        }
                     }
                 }
             }
@@ -59,16 +64,20 @@ class ExampleTest {
         skrape {
             url = "http://localhost:8080/example"
             expect {
-                assertThat(statusCode).isEqualTo(200)
-                assertThat(statusMessage).isEqualTo("OK")
+                status {
+                    assertThat(code).isEqualTo(200)
+                    assertThat(message).isEqualTo("OK")
+                }
                 assertThat(contentType).isEqualTo("text/html; charset=UTF-8")
 
-                p {
-                    findFirst {
-                        assertThat(text()).isEqualTo("i'm a paragraph")
-                    }
-                    findAll {
-                        assertThat(size).isEqualTo(2)
+                htmlDocument {
+                    p {
+                        findFirst {
+                            assertThat(text()).isEqualTo("i'm a paragraph")
+                        }
+                        findAll {
+                            assertThat(size).isEqualTo(2)
+                        }
                     }
                 }
             }
@@ -86,16 +95,20 @@ class ExampleTest : StringSpec({
         skrape {
             url = "http://localhost:8080/example"
             expect {
-                statusCode shouldBe 200
-                statusMessage shouldBe "OK"
+                status {
+                    code shouldBe 200
+                    message shouldBe "OK"
+                }
                 contentType shouldBe TEXT_HTML_UTF8
 
-                p {
-                    findFirst {
-                        text toBe "i'm a paragraph"
-                    }
-                    findAll {
-                        size toBe 2
+                htmlDocument {
+                    p {
+                        findFirst {
+                            text toBe "i'm a paragraph"
+                        }
+                        findAll {
+                            size toBe 2
+                        }
                     }
                 }
             }
@@ -113,16 +126,20 @@ object ExampleSpec: Spek({
             skrape {
                 url = "http://localhost:8080/example"
                 expect {
-                    statusCode toBe 200
-                    statusMessage toBe "OK"
+                    status {
+                        code toBe 200
+                        message toBe "OK"
+                    }
                     contentType toBe TEXT_HTML_UTF8
     
-                    p {
-                        findFirst {
-                            text toBe "i'm a paragraph"
-                        }
-                        findAll {
-                            size toBe 2
+                    htmlDocument {
+                        p {
+                            findFirst {
+                                text toBe "i'm a paragraph"
+                            }
+                            findAll {
+                                size toBe 2
+                            }
                         }
                     }
                 }
@@ -141,16 +158,20 @@ object ExampleSpec: Spek({
             skrape {
                 url = "http://localhost:8080/example"
                 expect {
-                    assertThat(statusCode).isEqualTo(200)
-                    assertThat(statusMessage).isEqualTo("OK")
+                    status {
+                        assertThat(code).isEqualTo(200)
+                        assertThat(message).isEqualTo("OK")
+                    }
                     assertThat(contentType).isEqualTo("text/html; charset=UTF-8")
     
-                    p {
-                        findFirst {
-                            text toBe "i'm a paragraph"
-                        }
-                        findAll {
-                            size toBe 2
+                    htmlDocument {
+                        p {
+                            findFirst {
+                                text toBe "i'm a paragraph"
+                            }
+                            findAll {
+                                size toBe 2
+                            }
                         }
                     }
                 }

@@ -9,7 +9,7 @@ description: >-
 ### Setup
 
 {% hint style="info" %}
-In order to use the MockMvc-extension it's required to have the [**skrapeit-core**](../../setup.md#getting-super-powers) artifact in the classpath as well as having a proper spring-test / spring-boot-test setup.
+In order to use the MockMvc-extension it's required to have the [**skrapeit-core**](../../overview/setup.md#getting-super-powers) artifact in the classpath as well as having a proper spring-test / spring-boot-test setup.
 {% endhint %}
 
 {% tabs %}
