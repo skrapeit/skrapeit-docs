@@ -6,7 +6,7 @@ description: A none-blocking Http-Client implementation
 
 Skrape{it} provides different fetcher implementations. All of the Fetchers behave different and you should pick them depending on your needs.
 
-The `AsyncFetcher` is a none-blocking http client. It will send an HTTP-request \(with [given request parameters](parse-html-from-web.md), headers etc.\) to a given url and returns a result that consists of the http response status as well as of the response headers and body in a none-blocking fashion by the use of coroutines. Thereby it can be convenient called from a suspend function.
+The `AsyncFetcher` is a none-blocking http client. It will send an HTTP-request \(with [given request parameters](../parse-html-from-web.md), headers etc.\) to a given url and returns a result that consists of the http response status as well as of the response headers and body in a none-blocking fashion by the use of coroutines. Thereby it can be convenient called from a suspend function.
 
 **It is fast, robust and result will look simular to what you would get when surfing a page in your browser with deactivated Javascript.**
 
