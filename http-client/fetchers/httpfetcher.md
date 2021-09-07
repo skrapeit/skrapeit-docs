@@ -6,7 +6,7 @@ description: A "classic" Http-Client implementation
 
 Skrape{it} provides different fetcher implementations. All of the Fetchers behave different and you should pick them depending on your needs.
 
-The `HttpFetcher` is a classic http client. It will send an HTTP-request \(with [given request parameters](../parse-html-from-web.md), headers etc.\) to a given url and returns a result that consists of the http response status as well as of the response headers and body. Nothing more, nothing less.
+The `HttpFetcher` is a classic http client. It will send an HTTP-request \(with [given request parameters](../request-options.md), headers etc.\) to a given url and returns a result that consists of the http response status as well as of the response headers and body. Nothing more, nothing less.
 
 **It is fast, robust and result will look simular to what you would get when surfing a page in your browser with deactivated Javascript.**
 
@@ -21,7 +21,7 @@ if you do not need skrape{it}'s full feature set you can use the HttpFetcher sta
 {% code title="build.gradle.kts" %}
 ```kotlin
 dependencies {
-    implementation("it.skrape:skrapeit-http-fetcher:1.1.1")
+    implementation("it.skrape:skrapeit-http-fetcher:1.1.5")
 }
 ```
 {% endcode %}
@@ -33,7 +33,7 @@ dependencies {
 <dependency>
   <groupId>it.skrape</groupId>
   <artifactId>skrapeit-http-fetcher</artifactId>
-  <version>1.1.1</version>
+  <version>1.1.5</version>
 </dependency>
 ```
 {% endcode %}

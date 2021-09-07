@@ -72,7 +72,7 @@ internal fun `dsl can skrape by url`() {
 
 To learn more about the possible request-options please have a look here:
 
-{% page-ref page="../http-client/parse-html-from-web.md" %}
+{% page-ref page="../http-client/request-options.md" %}
 
 To learn more about the parsing html and working with elements please have a look here:
 

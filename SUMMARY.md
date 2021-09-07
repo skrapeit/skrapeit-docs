@@ -16,7 +16,7 @@
   * [BrowserFetcher](http-client/fetchers/browserfetcher.md)
   * [AsyncFetcher](http-client/fetchers/asyncfetcher.md)
   * [Implement your own](http-client/fetchers/implement-your-own.md)
-* [Request Options](http-client/parse-html-from-web.md)
+* [Request Options](http-client/request-options.md)
 * [Pre-configure client](http-client/pre-configure-client.md)
 
 ## Html Parser <a id="parser"></a>

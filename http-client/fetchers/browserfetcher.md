@@ -6,7 +6,7 @@ description: A Browser-ish client implementation with JS rendering support
 
 Skrape{it} provides different fetcher implementations. All of the Fetchers behave different and you should pick them depending on your needs.
 
-The `BrowserFetcher` is a special http client. It will send an HTTP-request \(with [given request parameters](../parse-html-from-web.md), headers etc.\) to a given url and returns a result that consists of the http response status as well as of the response headers and body. The special thing is that it will be have like a browser and will return a rendered DOM as body instead of a plain simple body string.
+The `BrowserFetcher` is a special http client. It will send an HTTP-request \(with [given request parameters](../request-options.md), headers etc.\) to a given url and returns a result that consists of the http response status as well as of the response headers and body. The special thing is that it will be have like a browser and will return a rendered DOM as body instead of a plain simple body string.
 
 **It is not as fast as the other fetchers since it take some time to render a response, but the result will look simular to what you would get when surfing a page in your browser.**
 
@@ -21,7 +21,7 @@ if you do not need skrape{it}'s full feature set you can use the BrowserFetcher 
 {% code title="build.gradle.kts" %}
 ```kotlin
 dependencies {
-    implementation("it.skrape:skrapeit-browser-fetcher:1.1.1")
+    implementation("it.skrape:skrapeit-browser-fetcher:1.1.5")
 }
 ```
 {% endcode %}
@@ -33,7 +33,7 @@ dependencies {
 <dependency>
   <groupId>it.skrape</groupId>
   <artifactId>skrapeit-browser-fetcher</artifactId>
-  <version>1.1.1</version>
+  <version>1.1.5</version>
 </dependency>
 ```
 {% endcode %}
