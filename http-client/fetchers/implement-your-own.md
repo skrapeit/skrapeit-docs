@@ -6,6 +6,7 @@ All the Fetchers are implementing either [BlockingFetcher or a NonBlockingFetche
 
 In the example we implement a BlockingFetcher that can be passed to the skrape{it} DSL that is using Ktors different HttpClient implementations under the hood.
 
+{% code title="implement custom fetcher" %}
 ```kotlin
 class KtorBlockingFetcher(val ktorClient: HttpClient) : BlockingFetcher<HttpRequestBuilder> {
     override fun fetch(request: HttpRequestBuilder): Result = runBlocking {
@@ -24,23 +25,22 @@ class KtorBlockingFetcher(val ktorClient: HttpClient) : BlockingFetcher<HttpRequ
     override val requestBuilder: HttpRequestBuilder
         get() = HttpRequestBuilder()
 }
+```
+{% endcode %}
 
+{% code title="use custom fetcher" %}
+```kotlin
 val KTOR_CLIENT = HttpClient(Apache)
 
-@Test
-fun `dsl can skrape by url`() {
-    wiremock.setupStub(path = "/example")
-
-    val result = skrape(KtorBlockingFetcher(KTOR_CLIENT)) {
-        request {
-            url("${wiremock.httpUrl}/example")
-        }
-
-        response { this }
+val result = skrape(KtorBlockingFetcher(KTOR_CLIENT)) {
+    request {
+        url = "http://some.url"
     }
 
-    expectThat(result.responseStatus.code).isEqualTo(200)
-    expectThat(result.responseBody).contains("i'm the title")
+    response {
+        // do your stuff here
+    }
 }
 ```
+{% endcode %}
 
