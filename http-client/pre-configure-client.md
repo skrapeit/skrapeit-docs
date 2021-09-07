@@ -1,6 +1,6 @@
 # Pre-configure client
 
-Sometimes you may want to reuse your HTTP Client configuration to avoid code duplication or to archive better maintainability of your code base.  
+Sometimes you may want to reuse your [HTTP Client configuration](request-options.md) to avoid code duplication or to archive better maintainability of your code base.  
 Skrape{it} supports shared client configurations by default -- you just need to configure the client properties you want to reuse using the skrape{it} DSL without calling the `response` function. 
 
 Calling the `request` function will create a `Request` object which can then be stored to a variable.
