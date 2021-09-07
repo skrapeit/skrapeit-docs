@@ -21,7 +21,7 @@
 
 ## Html Parser <a id="parser"></a>
 
-* [Parsing](parser/untitled.md)
+* [Parsing HTML](parser/parsing-html.md)
 
 ## assertions
 
@@ -30,8 +30,6 @@
 ---
 
 * [How to Use](dsl/README.md)
-  * [Parsing HTML](dsl/parsing-html.md)
-  * [Matchers](dsl/matchers.md)
   * [Testing](dsl/basic-test-scenario.md)
   * [Scraping](dsl/extracting-data-from-websites.md)
   * [JS-rendered sites](dsl/extract-client-side-rendered-data.md)

@@ -108,7 +108,7 @@ fun main() {
 {% endhint %}
 
 {% hint style="info" %}
-5️⃣ To query a certain element you can invoke plain CSS-selector queries as string and directly use the picked element inside the lambde function to do your stuff. 🌶 Read more about it in the [**building-css-selectors section**](parsing-html.md#building-css-selectors).
+5️⃣ To query a certain element you can invoke plain CSS-selector queries as string and directly use the picked element inside the lambde function to do your stuff. 🌶 Read more about it in the [**building-css-selectors section**](../parser/parsing-html.md#building-css-selectors).
 {% endhint %}
 
 {% hint style="info" %}

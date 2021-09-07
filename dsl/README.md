@@ -76,11 +76,9 @@ To learn more about the possible request-options please have a look here:
 
 To learn more about the parsing html and working with elements please have a look here:
 
-{% page-ref page="parsing-html.md" %}
+{% page-ref page="../parser/parsing-html.md" %}
 
 To learn more about the build-in matchers please have a look here:
-
-{% page-ref page="matchers.md" %}
 
 
 
