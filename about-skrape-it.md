@@ -13,6 +13,7 @@
 * \*\*\*\*[**Dmitriy Konopelkin**](https://github.com/DeKaN)\*\*\*\*
 * \*\*\*\*[**Mikaël Peltier**](https://github.com/mikaelpeltier)\*\*\*\*
 * \*\*\*\*[**Silvio Henrique dos Reis Pereira**](https://github.com/silvio-pereira-ifood)\*\*\*\*
+* \*\*\*\*[**Stefan Bissell**](https://github.com/weaselflink)\*\*\*\*
 
 ### Suggestions and contributions are welcome.
 
