@@ -9,9 +9,9 @@ In the example we implement a BlockingFetcher that can be passed to the skrape{i
 {% code title="implement custom fetcher" %}
 ```kotlin
 class KtorBlockingFetcher(val ktorClient: HttpClient) : BlockingFetcher<HttpRequestBuilder> {
-    override fun fetch(request: HttpRequestBuilder): Result = runBlocking {
-        with(ktorClient.request<HttpResponse>(request)) {
-            Result(
+    override fun fetch(request: HttpRequestBuilder): Result = runBlocking { // runBlocking because ktor is fully build on coroutines but in our example we want it blocking
+        with(ktorClient.request<HttpResponse>(request)) { // do http call with ktor client
+            Result( // map ktor result to skrape{it} result
                 responseBody = readText(),
                 responseStatus = Result.Status(status.value, status.description),
                 contentType = contentType()?.toString(),
