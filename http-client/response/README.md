@@ -15,7 +15,12 @@ skrape(AsyncFetcher) { // <-- could use any valid fetcher depending on your use-
         // the scope of 'this' inside the response lambda is Result!
         // that means you can directly call any field or function of Result here.
         
+        // e.g. print the response body
+        println(responseBody)
         
+        // the last thing called inside the response lambda will be returned
+        // e.g. the status code
+        status { code }
     }
 }
 ```
