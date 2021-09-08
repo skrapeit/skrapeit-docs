@@ -18,6 +18,9 @@
   * [Implement your own](http-client/fetchers/implement-your-own.md)
 * [Request Options](http-client/request-options.md)
 * [Pre-configure client](http-client/pre-configure-client.md)
+* [Response](http-client/response/README.md)
+  * [Status](http-client/response/status.md)
+  * [Cookies](http-client/response/cookies.md)
 
 ## Html Parser <a id="parser"></a>
 
