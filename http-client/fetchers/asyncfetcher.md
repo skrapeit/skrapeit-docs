@@ -21,7 +21,7 @@ if you do not need skrape{it}'s full feature set you can use the AsynFetcher sta
 {% code title="build.gradle.kts" %}
 ```kotlin
 dependencies {
-    implementation("it.skrape:skrapeit-asyn-fetcher:1.1.5")
+    implementation("it.skrape:skrapeit-async-fetcher:1.1.5")
 }
 ```
 {% endcode %}
